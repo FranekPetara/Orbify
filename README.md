@@ -6,23 +6,24 @@ requirements:
    
 how to use:
 
-1. In main folder run command:
+1. remove "example" from .env.example, there are example environment variables there
+
+2. In main folder run command:
 docker-compose build
-2. When build is done run by command:
+3. When build is done run by command:
 docker-compose up
 
-3. Make migracion
+4. Make migracion
 docker-compose exec backend alembic revision --autogenerate -m "Initial migration"
 docker-compose exec backend alembic upgrade head
 
-4. To use the application, enter into your browser
+5. To use the application, enter into your browser
 http://localhost/docs#/
 
-5. Shutdown
+6. Shutdown
 docker-compose down
 
-6. how to test:
-docker-compose up
+7. how to test:
 docker-compose run backend pytest -vv app/test.py
 
 
