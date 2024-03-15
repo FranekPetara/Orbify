@@ -6,7 +6,7 @@ requirements:
    
 how to use:
 
-1. remove "example" from .env.example, there are example environment variables there
+1. remove "example" from .env.example file name, there are example environment variables there
 
 2. In main folder run command:
 docker-compose build
