@@ -11,6 +11,10 @@ how to use:
 2. In main folder run command:
 docker-compose build
 3. When build is done run by command:
+sometimes the backend initializes faster than the database (usually after the first use of docker-compose up),
+which may happen that the backend does not connect to the initializing database yet.
+Please use docker-compose again. I noticed this when I tried to run the project on different computers.
+
 docker-compose up
 
 4. Make migracion
